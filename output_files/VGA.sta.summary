@@ -3,28 +3,28 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow Model Setup 'hsyncCounter[0]'
-Slack : -3.739
-TNS   : -3.739
+Slack : -3.368
+TNS   : -8.341
 
 Type  : Slow Model Setup 'CLK'
-Slack : -2.737
-TNS   : -39.624
-
-Type  : Slow Model Hold 'CLK'
-Slack : -1.538
-TNS   : -10.967
+Slack : -2.660
+TNS   : -38.261
 
 Type  : Slow Model Hold 'hsyncCounter[0]'
-Slack : 0.078
-TNS   : 0.000
+Slack : -1.747
+TNS   : -5.217
+
+Type  : Slow Model Hold 'CLK'
+Slack : -1.376
+TNS   : -10.014
 
 Type  : Slow Model Recovery 'hsyncCounter[0]'
-Slack : -3.012
-TNS   : -3.012
+Slack : -1.463
+TNS   : -2.734
 
 Type  : Slow Model Removal 'hsyncCounter[0]'
-Slack : 1.866
-TNS   : 0.000
+Slack : -0.651
+TNS   : -1.947
 
 Type  : Slow Model Minimum Pulse Width 'CLK'
 Slack : -1.631
@@ -34,29 +34,29 @@ Type  : Slow Model Minimum Pulse Width 'hsyncCounter[0]'
 Slack : 0.500
 TNS   : 0.000
 
-Type  : Fast Model Setup 'hsyncCounter[0]'
-Slack : -1.043
-TNS   : -1.043
-
 Type  : Fast Model Setup 'CLK'
-Slack : -0.741
-TNS   : -5.790
+Slack : -0.732
+TNS   : -5.250
 
-Type  : Fast Model Hold 'CLK'
-Slack : -1.262
-TNS   : -9.895
+Type  : Fast Model Setup 'hsyncCounter[0]'
+Slack : -0.348
+TNS   : -0.505
 
 Type  : Fast Model Hold 'hsyncCounter[0]'
-Slack : 0.018
-TNS   : 0.000
+Slack : -1.191
+TNS   : -3.567
+
+Type  : Fast Model Hold 'CLK'
+Slack : -1.121
+TNS   : -9.243
 
 Type  : Fast Model Recovery 'hsyncCounter[0]'
-Slack : -0.817
-TNS   : -0.817
+Slack : 0.335
+TNS   : 0.000
 
 Type  : Fast Model Removal 'hsyncCounter[0]'
-Slack : 1.034
-TNS   : 0.000
+Slack : -0.469
+TNS   : -1.401
 
 Type  : Fast Model Minimum Pulse Width 'CLK'
 Slack : -1.380

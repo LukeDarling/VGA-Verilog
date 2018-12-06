@@ -47,9 +47,16 @@ module VGA(red, green, blue, hsync, vsync, led, sw, reset, CLK);
 		else if(hsyncCounter <= 688) begin
 			// Active data
 			hsync = 1;
-			red = 4'd1;
-			green = 4'd0;
-			blue = 4'd15;
+			if(hsyncCounter <= 368) begin
+				red = 4'd1;
+				green = 4'd0;
+				blue = 4'd15;
+			end
+			else begin
+				red = 4'd0;
+				green = 4'd15;
+				blue = 4'd15;
+			end
 		end
 		else if(hsyncCounter <= 704) begin
 			// Front porch

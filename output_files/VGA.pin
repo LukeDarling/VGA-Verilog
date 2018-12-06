@@ -63,7 +63,7 @@
  -- Pin directions (input, output or bidir) are based on device operating in user mode.
  ---------------------------------------------------------------------------------
 
-Quartus II 64-Bit Version 12.1 Build 177 11/07/2012 SJ Web Edition
+Quartus II 32-bit Version 12.1 Build 177 11/07/2012 SJ Web Edition
 CHIP  "VGA"  ASSIGNED TO AN: EP2C20F484C7
 
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
@@ -100,7 +100,7 @@ GND*                         : AA7       :        :                   :         
 GND*                         : AA8       :        :                   :         : 8         :                
 GND*                         : AA9       :        :                   :         : 8         :                
 GND*                         : AA10      :        :                   :         : 8         :                
-sw[0]                        : AA11      : input  : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : AA11      :        :                   :         : 8         :                
 GND*                         : AA12      :        :                   :         : 7         :                
 GND*                         : AA13      :        :                   :         : 7         :                
 GND*                         : AA14      :        :                   :         : 7         :                
@@ -504,14 +504,14 @@ GND*                         : V15       :        :                   :         
 GNDA_PLL4                    : V16       : gnd    :                   :         :           :                
 GND                          : V17       : gnd    :                   :         :           :                
 GND_PLL4                     : V18       : gnd    :                   :         :           :                
-sw[1]                        : V19       : input  : 3.3-V LVTTL       :         : 6         : N              
+GND*                         : V19       :        :                   :         : 6         :                
 GND*                         : V20       :        :                   :         : 6         :                
 GND*                         : V21       :        :                   :         : 6         :                
 GND*                         : V22       :        :                   :         : 6         :                
 GND*                         : W1        :        :                   :         : 1         :                
 GND*                         : W2        :        :                   :         : 1         :                
 GND*                         : W3        :        :                   :         : 1         :                
-GND*                         : W4        :        :                   :         : 1         :                
+sw[0]                        : W4        : input  : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : W5        :        :                   :         : 1         :                
 VCCIO8                       : W6        : power  :                   : 3.3V    : 8         :                
 GND*                         : W7        :        :                   :         : 8         :                
@@ -530,7 +530,7 @@ GND                          : W19       : gnd    :                   :         
 ~LVDS91p/nCEO~               : W20       : output : 3.3-V LVTTL       :         : 6         : N              
 GND*                         : W21       :        :                   :         : 6         :                
 GND*                         : W22       :        :                   :         : 6         :                
-GND*                         : Y1        :        :                   :         : 1         :                
+sw[1]                        : Y1        : input  : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : Y2        :        :                   :         : 1         :                
 GND*                         : Y3        :        :                   :         : 1         :                
 GND*                         : Y4        :        :                   :         : 1         :                
