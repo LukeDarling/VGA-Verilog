@@ -1,0 +1,14 @@
+module VGA(red, green, blue, hsync, vsync, led, sw, reset, CLK);
+
+	input [0:3] sw;
+	input reset, CLK;
+	
+	output [0:3] red;
+	output [0:3] green;
+	output [0:3] blue;
+	output hsync, vsync, led;
+	
+	always @ (reset) begin
+		if(reset == 0) led = 1; else led = 0;
+	end
+endmodule

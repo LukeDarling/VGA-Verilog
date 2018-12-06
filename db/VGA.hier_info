@@ -1,0 +1,47 @@
+|VGA
+red[3] <= <GND>
+red[2] <= <GND>
+red[1] <= <GND>
+red[0] <= <GND>
+green[3] <= <GND>
+green[2] <= <GND>
+green[1] <= <GND>
+green[0] <= <GND>
+blue[3] <= <GND>
+blue[2] <= <GND>
+blue[1] <= <GND>
+blue[0] <= <GND>
+hsync <= <GND>
+vsync <= <GND>
+led <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+sw[3] => ~NO_FANOUT~
+sw[2] => ~NO_FANOUT~
+sw[1] => ~NO_FANOUT~
+sw[0] => ~NO_FANOUT~
+reset => ~NO_FANOUT~
+CLK => counter[0].CLK
+CLK => counter[1].CLK
+CLK => counter[2].CLK
+CLK => counter[3].CLK
+CLK => counter[4].CLK
+CLK => counter[5].CLK
+CLK => counter[6].CLK
+CLK => counter[7].CLK
+CLK => counter[8].CLK
+CLK => counter[9].CLK
+CLK => counter[10].CLK
+CLK => counter[11].CLK
+CLK => counter[12].CLK
+CLK => counter[13].CLK
+CLK => counter[14].CLK
+CLK => counter[15].CLK
+CLK => counter[16].CLK
+CLK => counter[17].CLK
+CLK => counter[18].CLK
+CLK => counter[19].CLK
+CLK => counter[20].CLK
+CLK => counter[21].CLK
+CLK => counter[22].CLK
+CLK => counter[23].CLK
+
+
