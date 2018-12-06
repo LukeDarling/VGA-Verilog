@@ -1,5 +1,5 @@
 Analysis & Synthesis report for VGA
-Thu Nov 15 13:30:14 2018
+Thu Dec 06 14:38:53 2018
 Quartus II 64-Bit Version 12.1 Build 177 11/07/2012 SJ Web Edition
 
 
@@ -13,9 +13,10 @@ Quartus II 64-Bit Version 12.1 Build 177 11/07/2012 SJ Web Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Elapsed Time Per Partition
- 10. Analysis & Synthesis Messages
+  8. User-Specified and Inferred Latches
+  9. General Register Statistics
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -41,15 +42,15 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +------------------------------------+------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov 15 13:30:14 2018    ;
+; Analysis & Synthesis Status        ; Successful - Thu Dec 06 14:38:53 2018    ;
 ; Quartus II 64-Bit Version          ; 12.1 Build 177 11/07/2012 SJ Web Edition ;
 ; Revision Name                      ; VGA                                      ;
 ; Top-level Entity Name              ; VGA                                      ;
 ; Family                             ; Cyclone II                               ;
-; Total logic elements               ; 51                                       ;
-;     Total combinational functions  ; 51                                       ;
-;     Dedicated logic registers      ; 24                                       ;
-; Total registers                    ; 24                                       ;
+; Total logic elements               ; 56                                       ;
+;     Total combinational functions  ; 56                                       ;
+;     Dedicated logic registers      ; 20                                       ;
+; Total registers                    ; 20                                       ;
 ; Total pins                         ; 21                                       ;
 ; Total virtual pins                 ; 0                                        ;
 ; Total memory bits                  ; 0                                        ;
@@ -154,13 +155,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                               ;
-+----------------------------------+-----------------+------------------------+------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path ; Library ;
-+----------------------------------+-----------------+------------------------+------------------------------+---------+
-; VGA.v                            ; yes             ; User Verilog HDL File  ; H:/ele110/VGA/VGA.v          ;         ;
-+----------------------------------+-----------------+------------------------+------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                      ;
++----------------------------------+-----------------+------------------------+-------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path        ; Library ;
++----------------------------------+-----------------+------------------------+-------------------------------------+---------+
+; VGA.v                            ; yes             ; User Verilog HDL File  ; C:/Users/ldarling/VGA-Verilog/VGA.v ;         ;
++----------------------------------+-----------------+------------------------+-------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -168,27 +169,27 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 51    ;
+; Estimated Total logic elements              ; 56    ;
 ;                                             ;       ;
-; Total combinational functions               ; 51    ;
+; Total combinational functions               ; 56    ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 23    ;
-;     -- 3 input functions                    ; 3     ;
-;     -- <=2 input functions                  ; 25    ;
+;     -- 4 input functions                    ; 18    ;
+;     -- 3 input functions                    ; 14    ;
+;     -- <=2 input functions                  ; 24    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 28    ;
-;     -- arithmetic mode                      ; 23    ;
+;     -- normal mode                          ; 38    ;
+;     -- arithmetic mode                      ; 18    ;
 ;                                             ;       ;
-; Total registers                             ; 24    ;
-;     -- Dedicated logic registers            ; 24    ;
+; Total registers                             ; 20    ;
+;     -- Dedicated logic registers            ; 20    ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
 ; I/O pins                                    ; 21    ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
-; Maximum fan-out                             ; 24    ;
-; Total fan-out                               ; 199   ;
-; Average fan-out                             ; 2.07  ;
+; Maximum fan-out                             ; 20    ;
+; Total fan-out                               ; 217   ;
+; Average fan-out                             ; 2.24  ;
 +---------------------------------------------+-------+
 
 
@@ -197,9 +198,26 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |VGA                       ; 51 (51)           ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 21   ; 0            ; |VGA                ;              ;
+; |VGA                       ; 56 (56)           ; 20 (20)      ; 0           ; 0            ; 0       ; 0         ; 21   ; 0            ; |VGA                ;              ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                               ;
++----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
++----------------------------------------------------+---------------------+------------------------+
+; red[3]$latch                                       ; red[0]              ; yes                    ;
+; blue[3]$latch                                      ; red[0]              ; yes                    ;
+; blue[2]$latch                                      ; red[0]              ; yes                    ;
+; blue[1]$latch                                      ; red[0]              ; yes                    ;
+; blue[0]$latch                                      ; red[0]              ; yes                    ;
+; hsync$latch                                        ; GND                 ; yes                    ;
+; vsync$latch                                        ; GND                 ; yes                    ;
+; Number of user-specified and inferred latches = 7  ;                     ;                        ;
++----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------+
@@ -207,12 +225,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 24    ;
+; Total registers                              ; 20    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 10    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -232,20 +250,43 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 12.1 Build 177 11/07/2012 SJ Web Edition
-    Info: Processing started: Thu Nov 15 13:30:11 2018
+    Info: Processing started: Thu Dec 06 14:38:52 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VGA -c VGA
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file vga.v
     Info (12023): Found entity 1: VGA
 Info (12127): Elaborating entity "VGA" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at VGA.v(15): truncated value with size 32 to match size of target (24)
-Warning (10034): Output port "red" at VGA.v(6) has no driver
-Warning (10034): Output port "green" at VGA.v(7) has no driver
-Warning (10034): Output port "blue" at VGA.v(8) has no driver
-Warning (10034): Output port "hsync" at VGA.v(9) has no driver
-Warning (10034): Output port "vsync" at VGA.v(9) has no driver
+Warning (10230): Verilog HDL assignment warning at VGA.v(22): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at VGA.v(26): truncated value with size 32 to match size of target (10)
+Warning (10240): Verilog HDL Always Construct warning at VGA.v(40): inferring latch(es) for variable "hsync", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at VGA.v(40): inferring latch(es) for variable "red", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at VGA.v(40): inferring latch(es) for variable "green", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at VGA.v(40): inferring latch(es) for variable "blue", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at VGA.v(40): inferring latch(es) for variable "vsync", which holds its previous value in one or more paths through the always construct
+Warning (10034): Output port "led" at VGA.v(9) has no driver
+Info (10041): Inferred latch for "blue[3]" at VGA.v(78)
+Info (10041): Inferred latch for "blue[2]" at VGA.v(78)
+Info (10041): Inferred latch for "blue[1]" at VGA.v(78)
+Info (10041): Inferred latch for "blue[0]" at VGA.v(78)
+Info (10041): Inferred latch for "green[3]" at VGA.v(78)
+Info (10041): Inferred latch for "green[2]" at VGA.v(78)
+Info (10041): Inferred latch for "green[1]" at VGA.v(78)
+Info (10041): Inferred latch for "green[0]" at VGA.v(78)
+Info (10041): Inferred latch for "red[3]" at VGA.v(78)
+Info (10041): Inferred latch for "red[2]" at VGA.v(78)
+Info (10041): Inferred latch for "red[1]" at VGA.v(78)
+Info (10041): Inferred latch for "red[0]" at VGA.v(78)
+Info (10041): Inferred latch for "vsync" at VGA.v(78)
+Info (10041): Inferred latch for "hsync" at VGA.v(47)
+Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
+    Info (13026): Duplicate LATCH primitive "blue[0]$latch" merged with LATCH primitive "red[3]$latch"
+    Info (13026): Duplicate LATCH primitive "blue[1]$latch" merged with LATCH primitive "red[3]$latch"
+    Info (13026): Duplicate LATCH primitive "blue[2]$latch" merged with LATCH primitive "red[3]$latch"
+    Info (13026): Duplicate LATCH primitive "blue[3]$latch" merged with LATCH primitive "red[3]$latch"
+Warning (13012): Latch red[3]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal vsyncCounter[4]
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal vsyncCounter[4]
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "red[3]" is stuck at GND
     Warning (13410): Pin "red[2]" is stuck at GND
     Warning (13410): Pin "red[1]" is stuck at GND
     Warning (13410): Pin "red[0]" is stuck at GND
@@ -253,12 +294,7 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "green[2]" is stuck at GND
     Warning (13410): Pin "green[1]" is stuck at GND
     Warning (13410): Pin "green[0]" is stuck at GND
-    Warning (13410): Pin "blue[3]" is stuck at GND
-    Warning (13410): Pin "blue[2]" is stuck at GND
-    Warning (13410): Pin "blue[1]" is stuck at GND
-    Warning (13410): Pin "blue[0]" is stuck at GND
-    Warning (13410): Pin "hsync" is stuck at GND
-    Warning (13410): Pin "vsync" is stuck at GND
+    Warning (13410): Pin "led" is stuck at GND
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 5 input pin(s) that do not drive logic
@@ -267,14 +303,14 @@ Warning (21074): Design contains 5 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "sw[1]"
     Warning (15610): No output dependent on input pin "sw[0]"
     Warning (15610): No output dependent on input pin "reset"
-Info (21057): Implemented 72 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 77 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
     Info (21059): Implemented 15 output pins
-    Info (21061): Implemented 51 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 28 warnings
-    Info: Peak virtual memory: 4610 megabytes
-    Info: Processing ended: Thu Nov 15 13:30:15 2018
-    Info: Elapsed time: 00:00:04
+    Info (21061): Implemented 56 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 27 warnings
+    Info: Peak virtual memory: 4615 megabytes
+    Info: Processing ended: Thu Dec 06 14:38:53 2018
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

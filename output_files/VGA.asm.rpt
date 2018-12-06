@@ -1,5 +1,5 @@
 Assembler report for VGA
-Thu Nov 15 13:30:25 2018
+Thu Dec 06 14:38:59 2018
 Quartus II 64-Bit Version 12.1 Build 177 11/07/2012 SJ Web Edition
 
 
@@ -10,8 +10,8 @@ Quartus II 64-Bit Version 12.1 Build 177 11/07/2012 SJ Web Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: H:/ele110/VGA/output_files/VGA.sof
-  6. Assembler Device Options: H:/ele110/VGA/output_files/VGA.pof
+  5. Assembler Device Options: C:/Users/ldarling/VGA-Verilog/output_files/VGA.sof
+  6. Assembler Device Options: C:/Users/ldarling/VGA-Verilog/output_files/VGA.pof
   7. Assembler Messages
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Nov 15 13:30:25 2018 ;
+; Assembler Status      ; Successful - Thu Dec 06 14:38:59 2018 ;
 ; Revision Name         ; VGA                                   ;
 ; Top-level Entity Name ; VGA                                   ;
 ; Family                ; Cyclone II                            ;
@@ -78,37 +78,37 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+------------------------------------+
-; Assembler Generated Files          ;
-+------------------------------------+
-; File Name                          ;
-+------------------------------------+
-; H:/ele110/VGA/output_files/VGA.sof ;
-; H:/ele110/VGA/output_files/VGA.pof ;
-+------------------------------------+
++----------------------------------------------------+
+; Assembler Generated Files                          ;
++----------------------------------------------------+
+; File Name                                          ;
++----------------------------------------------------+
+; C:/Users/ldarling/VGA-Verilog/output_files/VGA.sof ;
+; C:/Users/ldarling/VGA-Verilog/output_files/VGA.pof ;
++----------------------------------------------------+
 
 
-+--------------------------------------------------------------+
-; Assembler Device Options: H:/ele110/VGA/output_files/VGA.sof ;
-+----------------+---------------------------------------------+
-; Option         ; Setting                                     ;
-+----------------+---------------------------------------------+
-; Device         ; EP2C20F484C7                                ;
-; JTAG usercode  ; 0xFFFFFFFF                                  ;
-; Checksum       ; 0x001B76F1                                  ;
-+----------------+---------------------------------------------+
++------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/ldarling/VGA-Verilog/output_files/VGA.sof ;
++----------------+-------------------------------------------------------------+
+; Option         ; Setting                                                     ;
++----------------+-------------------------------------------------------------+
+; Device         ; EP2C20F484C7                                                ;
+; JTAG usercode  ; 0xFFFFFFFF                                                  ;
+; Checksum       ; 0x001B93FF                                                  ;
++----------------+-------------------------------------------------------------+
 
 
-+--------------------------------------------------------------+
-; Assembler Device Options: H:/ele110/VGA/output_files/VGA.pof ;
-+--------------------+-----------------------------------------+
-; Option             ; Setting                                 ;
-+--------------------+-----------------------------------------+
-; Device             ; EPCS16                                  ;
-; JTAG usercode      ; 0x00000000                              ;
-; Checksum           ; 0x1DD90A95                              ;
-; Compression Ratio  ; 3                                       ;
-+--------------------+-----------------------------------------+
++------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/ldarling/VGA-Verilog/output_files/VGA.pof ;
++--------------------+---------------------------------------------------------+
+; Option             ; Setting                                                 ;
++--------------------+---------------------------------------------------------+
+; Device             ; EPCS16                                                  ;
+; JTAG usercode      ; 0x00000000                                              ;
+; Checksum           ; 0x1DD87643                                              ;
+; Compression Ratio  ; 3                                                       ;
++--------------------+---------------------------------------------------------+
 
 
 +--------------------+
@@ -117,14 +117,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 12.1 Build 177 11/07/2012 SJ Web Edition
-    Info: Processing started: Thu Nov 15 13:30:23 2018
+    Info: Processing started: Thu Dec 06 14:38:58 2018
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off VGA -c VGA
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4579 megabytes
-    Info: Processing ended: Thu Nov 15 13:30:26 2018
-    Info: Elapsed time: 00:00:03
+    Info: Processing ended: Thu Dec 06 14:38:59 2018
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 
